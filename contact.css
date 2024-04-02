@@ -1,0 +1,298 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body
+{
+    background-color: var(--primary-color);
+}
+:root 
+{
+    --primary-color : #060608; 
+--btn-color: #8F7EEE;
+--secondary-color:#0A0A0C;
+--cards-color:#15141A;
+--text-color:#fff;
+--hover:#4f3fa7;
+}
+
+.container 
+{
+    width: 100%;
+    
+    height: 100vh;
+    background-color: var(--primary-color);
+    --primary-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    
+}
+header 
+{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+header 
+.logo 
+{
+    margin-left: 20px;
+}
+.logo 
+h1 
+{
+    font-size: 35px;
+    font-family: var(--primary-family);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-color) ;
+}
+nav 
+ul 
+{
+    list-style: none;
+}
+nav 
+ul 
+li
+{
+    padding-left: 15px;
+    display: inline-block;
+}
+nav 
+ul 
+li 
+a 
+{
+    color: var(--text-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: var(--primary-family);
+    transition: color 3ms;
+    font-size: 20px;
+}
+nav 
+ul 
+li 
+a:hover 
+{
+    color: var(--btn-color);
+}
+.sign 
+a 
+{
+    color: var(--text-color);
+    background-color: var(--btn-color);
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: var(--primary-family);
+    font-size: 20px;
+    transition: background-color 3ms;
+    margin-right: 20px;
+}
+.sign
+a:hover 
+{
+    background-color: #4f3fa7;
+}
+#bars-menu
+{
+    display: none;
+    font-size: 25px;
+    color: var(--text-color);
+}
+.active 
+{
+    display: none;
+}
+#close 
+{
+    display: none;
+    font-size: 25px;
+    color: var(--text-color);
+}
+@media screen and (max-width: 881px) {
+
+    .active 
+    {
+        display: inline-block;
+    }
+    .sign
+    {
+        display: none;
+    }
+    #bars-menu 
+    {
+        display: inline-block;
+        margin-right: 20px;
+        cursor: pointer;
+        transition: 0.1s;
+    }
+    #bars-menu:hover 
+    {
+        color: var(--btn-color)
+    }
+    nav 
+    {
+
+        width: 100%;
+        height: 300px;
+        transition: all 3s;
+    }
+    header 
+    {
+        position: relative;
+    }
+    nav 
+    {
+        position: absolute;
+        top: -200%;
+        display: none;
+    }
+    nav 
+    ul 
+    li 
+    {
+        display: block;
+        width: 100%;
+        padding-top: 20px;
+        box-shadow: 2px 2px 5px var(--secondary-color);
+    }
+    nav 
+    ul 
+    li:hover
+    {
+        background-color: var(--secondary-color);
+    }
+    .vfg 
+    {
+        display: flex;
+        justify-content: space-between;
+
+        
+    }
+    #close 
+    {
+        display: flex;
+        justify-self: end;
+        margin-right: 20px;
+        cursor: pointer;
+        transition: 0.1s;
+    }
+    #close:hover 
+    {
+        color: var(--btn-color);
+    }
+}
+.contact
+{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.contact
+h1 
+{
+    color: var(--text-color);
+    font-size: 40px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+}
+.sections 
+{
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--secondary-color);
+    box-shadow: 10px 10px 30px var(--btn-color);
+    width: 80%;
+    padding: 50px 0;
+    margin-top: 35px;
+    
+}
+.sections 
+div 
+{
+    display: flex;
+    align-items:center;
+    justify-content: space-between ;
+    width: 13%;
+    background-color: var(--secondary-color);
+    box-shadow: 1px 1px 2px var(--text-color);
+    padding: 10px 10px;
+    transition: all 0.5s;
+    
+}
+.sections 
+div 
+i 
+{
+    color: var(--text-color);
+    font-size: 20px;
+}
+.sections 
+div 
+a 
+{
+    color: var(--text-color);
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    
+}
+.sections 
+div:hover
+{
+   background-color: var(--cards-color);
+   padding: 8px 0;
+}
+@media  screen and (max-width:1120px) {
+    .sections 
+    {
+        flex-direction: column;
+        min-height: 60vh;
+    }
+    .contact 
+    h1 
+    {
+        display: none;
+    }
+    .sections 
+    div 
+    {
+        flex-direction: column;
+        margin-bottom: 10px;
+        width: 60%;
+        transition: all 4ms;
+    }
+    .sections
+    div 
+    i 
+    {
+        margin-bottom: 5px;
+    }
+    .sections 
+    div:hover
+    {
+        background-color: var(--cards-color);
+        padding: 10px;
+    }
+    
+}
+

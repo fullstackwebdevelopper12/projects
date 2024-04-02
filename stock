@@ -1,0 +1,21 @@
+ <div class="cards" id="services">
+        
+        <div class="card">
+            <i class="fa fa-code" aria-hidden="true"></i>
+            <h1>frontend developper</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing <br> Consequatur, suscipit praesentium alias consequuntur cum </p>
+
+        </div>
+        <div class="card">
+            <i class="fa fa-code" aria-hidden="true"></i>
+            <h1>frontend developper</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing <br> Consequatur, suscipit praesentium alias consequuntur cum </p>
+
+        </div>
+        <div class="card">
+            <i class="fa fa-code" aria-hidden="true"></i>
+            <h1>frontend developper</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing <br> Consequatur, suscipit praesentium alias consequuntur cum </p>
+
+        </div>
+    </div>
